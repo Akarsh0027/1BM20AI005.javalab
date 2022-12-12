@@ -1,0 +1,70 @@
+interface Tossable
+{
+    public void toss();
+}
+ abstract class Ball implements Tossable
+{
+    private String brandName;
+    
+    public Ball(String brandName)
+    {
+        this.brandName = brandName;
+    }
+    
+    public String getBrandName()
+    {
+        return brandName;
+    }
+    
+    public abstract void bounce(); 
+}
+ class Baseball extends Ball
+{
+
+    public Baseball(String brandName)
+    {
+        super(brandName);
+    }
+
+    public void toss()
+    {
+    }
+
+    public void bounce()
+    {
+    }
+
+}
+class Football extends Ball
+{
+
+    public Football(String brandName)
+    {      
+        super(brandName);
+    }
+    
+    public void toss()
+    {
+    }
+
+    public void bounce()
+    {
+    }
+}
+ class Rock implements Tossable
+{
+    
+    public void toss()
+    {        
+    }
+    
+}
+class sample
+{
+public static void main(String args[])
+{
+Football a1=new Football("gggg");
+Baseball a2=new Baseball("hhh");
+a1.getBrandName();
+}
+}
