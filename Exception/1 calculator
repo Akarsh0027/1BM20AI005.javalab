@@ -1,0 +1,45 @@
+import java.util.Scanner;
+class calculator
+{
+public static void main(String args[])
+{
+
+int a,b,c;
+int q;
+Scanner s=new Scanner(System.in);
+System.out.println("enter the choice");
+q=s.nextInt();
+System.out.println("enter the value");
+a=s.nextInt();
+b=s.nextInt();
+switch(q)
+{
+case 1:
+c=a+b;
+System.out.println("add="+c);
+break;
+case 2:
+c=a-b;
+System.out.println("sub="+c);
+break;
+case 3:
+c=a*b;
+System.out.println("mult="+c);
+break;
+case 4:
+try{
+c=a/b;
+System.out.println(c);
+}
+catch(ArithmeticException e)
+{
+System.out.println("bvalue is=0");
+}
+break;
+default:
+System.out.println("gv");
+}
+}
+}
+
+
